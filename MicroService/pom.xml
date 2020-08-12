@@ -41,20 +41,23 @@
         <repository.utilities.version>[1.0,)</repository.utilities.version>
     </properties>
   
-    <repositories>
+  <!-- <repositories>
         <repository>
             <id>releases</id>
             <url>http://nexus-deege.rhcloud.com/nexus/content/repositories/releases</url>
         </repository>
     </repositories>
-
-
-    <distributionManagement>
+    
+      <distributionManagement>
         <repository>
             <id>releases</id>
             <url>http://nexus-deege.rhcloud.com/nexus/content/repositories/releases</url>
         </repository>
     </distributionManagement>
+     -->  
+
+
+  
   
     <dependencyManagement>
         <dependencies>
