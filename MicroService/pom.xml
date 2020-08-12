@@ -12,7 +12,7 @@
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
- <developers>
+ <!--<developers>
         <developer>
             <id>djspiess</id>
             <organization>DJ Spiess</organization>
@@ -21,7 +21,7 @@
                 <role>developer</role>
             </roles>
         </developer>
-    </developers> 
+    </developers>   -->
   
     <properties>
         <project.version>SNAPSHOT</project.version>
@@ -132,7 +132,7 @@
                     </execution>
                 </executions>
 
-                <configuration>
+               <configuration>
                     <dotGitDirectory>C:\Users\lisau\git\deegeu-quizzer\.git</dotGitDirectory> -->
                     <prefix>git</prefix>
                     <dateFormat>dd.MM.yyyy '@' HH:mm:ss z</dateFormat>
@@ -158,7 +158,7 @@
                         <match>*</match>
                         <forceLongFormat>false</forceLongFormat>
                     </gitDescribe>
-                </configuration>
+               </configuration>
             </plugin>
         </plugins>
     </build>

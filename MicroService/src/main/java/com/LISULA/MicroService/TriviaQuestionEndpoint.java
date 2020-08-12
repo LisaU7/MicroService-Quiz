@@ -5,7 +5,6 @@ import java.util.Date;
 import com.LISULA.MicroService.TriviaQuestion;
 import com.LISULA.MicroService.TriviaQuestionAccessible;
 import com.LISULA.MicroService.TriviaQuestionArrayAccess;
-import java.util.Date;
 import java.util.List;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
