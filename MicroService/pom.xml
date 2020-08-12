@@ -12,16 +12,6 @@
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
- <!--<developers>
-        <developer>
-            <id>djspiess</id>
-            <organization>DJ Spiess</organization>
-            <organizationUrl>http://www.deegeu.com</organizationUrl>
-            <roles>
-                <role>developer</role>
-            </roles>
-        </developer>
-    </developers>   -->
   
     <properties>
         <project.version>SNAPSHOT</project.version>
@@ -41,20 +31,6 @@
         <repository.utilities.version>[1.0,)</repository.utilities.version>
     </properties>
   
-  <!-- <repositories>
-        <repository>
-            <id>releases</id>
-            <url>http://nexus-deege.rhcloud.com/nexus/content/repositories/releases</url>
-        </repository>
-    </repositories>
-    
-      <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <url>http://nexus-deege.rhcloud.com/nexus/content/repositories/releases</url>
-        </repository>
-    </distributionManagement>
-     -->  
 
 
   
