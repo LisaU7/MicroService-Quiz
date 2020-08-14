@@ -12,7 +12,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-
 /**
  * JAX-RS application. Root path is /trivia
  *
@@ -21,21 +20,15 @@ import javax.ws.rs.core.UriInfo;
 @Path("")
 public class App extends Application {
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getDirectory(@Context UriInfo uri) {
-        Link selfLink = Link.fromUri(uri.getBaseUri())
-                .rel("self").type(MediaType.APPLICATION_JSON)
-                .build();
-        Link questionsLink = Link.fromUri(uri.getBaseUri() + "questions")
-                .rel("questions").type(MediaType.APPLICATION_JSON)
-                .build();
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getDirectory(@Context UriInfo uri) {
+		Link selfLink = Link.fromUri(uri.getBaseUri()).rel("self").type(MediaType.APPLICATION_JSON).build();
+		Link questionsLink = Link.fromUri(uri.getBaseUri() + "questions").rel("questions")
+				.type(MediaType.APPLICATION_JSON).build();
 
-        return Response.ok()
-                .lastModified(new Date())
-                .location(uri.getRequestUri())
-                .links(selfLink, questionsLink)
-                .build();
-    }
+		return Response.ok().lastModified(new Date()).location(uri.getRequestUri()).links(selfLink, questionsLink)
+				.build();
+	}
 
 }
